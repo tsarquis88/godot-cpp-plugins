@@ -6,3 +6,4 @@
 resource_name = "GlobalTimer"
 class_name = "GlobalTimer"
 library = ExtResource( 1 )
+script_class_name = "GlobalTimer"

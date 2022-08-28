@@ -11,22 +11,22 @@ func _ready():
 
 
 func add_timeout():
-	timer = $GlobalTimer.add_timeout(self, "print_text", 
+	timer = GlobalTimer.add_timeout(self, "print_text", 
 		$CanvasLayer/WhiteBack/TimeInput.value, 
 		$CanvasLayer/WhiteBack/AutoStartInput.pressed, 
 		$CanvasLayer/WhiteBack/OneshotInput.pressed)
 
 
 func start_timeout():
-	$GlobalTimer.start_timeout(timer)
+	GlobalTimer.start_timeout(timer)
 
 
 func stop_timeout():
-	$GlobalTimer.stop_timeout(timer)
+	GlobalTimer.stop_timeout(timer)
 
 
 func delete_timeout():
-	$GlobalTimer.delete_timeout(timer)
+	GlobalTimer.delete_timeout(timer)
 
 
 func print_text():

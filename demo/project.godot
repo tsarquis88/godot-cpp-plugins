@@ -8,11 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "GlobalTimer",
+"language": "NativeScript",
+"path": "res://bin/GlobalTimer.gdns"
+} ]
+_global_script_class_icons={
+"GlobalTimer": ""
+}
+
 [application]
 
 config/name="Demo"
 run/main_scene="res://GlobalTimerTest.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalTimer="*res://bin/GlobalTimer.gdns"
 
 [display]
 
@@ -21,7 +35,7 @@ window/size/height=180
 
 [gdnative]
 
-singletons=[  ]
+singletons=[ "res://bin/GlobalTimer.gdnlib" ]
 
 [gui]
 
